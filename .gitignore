@@ -1,0 +1,6 @@
+*.pyc
+*.zip
+*.db
+*.sqlite3
+.DS_Store
+__pycache__

@@ -1,0 +1,27 @@
+<html>
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+    <link href="http://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin,latin-ext"
+        rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<h1> Delete restaurant </h1>
+
+<form action="{{url_for('deleteRestaurant', restaurant_id=restaurant_id)}}" method = 'POST'>
+
+<h2>Are you sure you want to delete {{item.name}}?</h2>
+
+
+<input type='submit' name='delete' value='Yes, delete it'>
+<br>
+
+<a href="/restaurants">No! Go back to list of restaurants</a>
+
+</form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<html>
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+    <link href="http://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin,latin-ext"
+        rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- inputs are  list of restaurants -->
+
+<div class = 'list_pane'>
+    <div class = 'header'>
+    <h1>Restaurants</h1>
+    </div>
+
+<div class = 'flash'>
+<!--MESSAGE FLASHING EXAMPLE -->
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+
+<ul>
+{% for message in messages %}
+    <li><strong>{{message}}</strong></li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
+</div>
+
+
+{% for i in items %}
+
+<p>
+    <div class="restaurant">
+    <a href="{{ url_for('showMenu', restaurant_id=i.id)}}">
+    {{i.name}}
+    </a>
+    </div>
+    <div class="editdeletepane">
+        <a href="{{ url_for('editRestaurant', restaurant_id=i.id)}}">
+        Edit Restaurant
+        </a>
+        <br>
+        <a href="{{ url_for('deleteRestaurant', restaurant_id=i.id)}}">
+        Delete Restaurant
+        </a>
+    </div>
+</p>
+
+{% endfor %}
+<!-- <div class="editdeletepane"> -->
+    <a href="{{ url_for('newRestaurant')}}">
+        Add New Restaurant
+    </a>
+<!-- </div> -->
+</div>
+</body>
+
+</html>

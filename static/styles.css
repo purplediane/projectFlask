@@ -1,0 +1,36 @@
+body            { font-family: sans-serif; background-image: url('img3.jpg'); background-color: #fcf2ff;
+                    color: #631e99;}
+h1, h2, h3, h4       { color: #3a80b2; }
+h1, h2          { font-family: 'Kaushan Script', serif; margin: 0; }
+h1              { border-bottom: 3px dotted #3a80b2; text-shadow: 2px 2px 2px #19344c;}
+h2              { font-size: 1.2em; }
+
+p, dd, dt               { color: #631e99;}
+
+a {text-decoration: none; color:#631e99; font-size: .75em;}
+
+.pane {
+    position:absolute; left: 10%; right: 10%;
+    border: 2px solid;
+    color: #631e99;
+    border-radius: 25px; padding: 10px; margin: 5px; border-color: #999999; background-color: #fcf2ff }
+.list_pane {
+    position:absolute; left: 25%;
+    border: 2px solid;
+    color: #631e99;
+    border-radius: 25px; padding: 25px; margin: 5px; border-color: #999999; background-color: #fcf2ff }
+.header         {left:50%; text-align: center; padding-bottom: 5px}
+.name {width:50%;display: inline-block; float: left; font-weight: bold;}
+.description {}
+.price {text-align: right; width:50%; float: right; }
+
+.flash          { background: #cee5F5; }
+.courselabel {color: #3a80b2; font-weight: bold; text-align: center;}
+.restaurant a {font-family: 'Kaushan Script', cursive; font-size: 1.25em;text-align: center;}
+.createnewitem, .createnewitem a {color:#4ba5e5; text-align: right; }
+.editdeletepane { font-size: .9em; font-family: 'Roboto', sans-serif;}
+.editdeletepane a {color:#4ba5e5; }
+
+/*lighter blue 4ba5e5
+purple 631e99
+blue 3a80b2*/
