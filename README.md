@@ -1,6 +1,6 @@
 # projectFlask
 
-Final Project (a restaurant menu app 🍔🍕🍤) from the Udacity class Fullstack Foundations. Needs more CSS work and some cleanup, probably. Stole the CSS from my DjangoGirls blog, so some doesn't apply. 
+Final Project (a restaurant menu app 🍔🍕🍤) from the Udacity class Fullstack Foundations. Needs more CSS work and some cleanup, probably. Stole the CSS from my DjangoGirls blog, so some doesn't apply. Originally in the class, we used Vagrant VM but I extracted this part out.
 
 Haven't converted it to a real website yet. Hoping to put it on PythonAnywhere
 or Heroku sometime in the near future, just for fun.
